@@ -1,0 +1,30 @@
+{
+  "name": "lolz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "concurrently npm:watch-*",
+    "watch-client": "webpack --watch",
+    "watch-server": "tsc --p tsconfig.server.json --watch",
+    "watch-server-build": "nodemon --watch ./dist/index.js --exec node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/socket.io": "^2.1.4",
+    "@types/socket.io-client": "^1.4.32",
+    "concurrently": "^5.0.1",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
